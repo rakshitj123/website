@@ -9,8 +9,8 @@ jobs:
     docker:
       - image: cimg/node:21.6.1
         auth:
-          username: Rakshit1806
-          password: rakshit1806
+          username: $Rakshit1806
+          password: $rakshit1806
     steps:
       - checkout
       - run: node --verison
