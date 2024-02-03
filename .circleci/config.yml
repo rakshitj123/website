@@ -8,6 +8,9 @@ jobs:
   build:
     docker:
       - image: cimg/14.13.0
+        auth:
+          username: Rakshit1806
+          password: rakshit1806
     steps:
       - checkout
       - run: node --verison
