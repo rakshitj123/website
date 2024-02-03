@@ -1,0 +1,14 @@
+version: 2.1
+workflows:
+  Imagecreation:
+    jobs:
+     - build
+     
+jobs:
+  build:
+    docker:
+      - image: cimg/14.13.0
+    steps:
+      - checkout
+      - run: node --verison
+    
